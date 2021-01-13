@@ -29,11 +29,11 @@ function questionOne (){
                 break;
             
             case "Intern":
-                console.log("Intern")
+                createIntern();
                 break;
 
             case "Manager":
-                console.log("Manager")
+                createManager();
                 break;
         }
     })
@@ -63,10 +63,72 @@ function createEngineer(){
         }
     ]).then(answers =>{
         const newEngineer = new Engineer(answers.name, answers.id, answers.email, answers.github)
-        console.log(newEngineer);
+        // console.log(newEngineer);
         employees.push(newEngineer);
         // console.log(employees);
         questionOne();
+    })
+}
+
+function createIntern(){
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Enter employee name:",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Enter employee ID number:",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Enter employee email:",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Enter employee school:",
+            name: "school"
+        }
+    ]).then(answers => {
+        const newIntern = new Intern(answers.name, answers.id, answers.email, answers.school)
+        // console.log(newIntern)
+        employees.push(newIntern)
+        // console.log(employees)
+        questionOne()
+    })
+}
+
+function createManager(){
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Enter employee name:",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Enter employee ID number:",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Enter employee email:",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Enter office number:",
+            name: "officeNumber"
+        }
+    ]).then(answers =>{
+        const newManager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
+        console.log(newManager)
+        employees.push(newManager)
+        console.log(employees)
+        questionOne()
     })
 }
 
