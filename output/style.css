@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.team-heading{
+    background-color: #74c7b8;
+}
+
+h1{
+    font-size: 3.3rem;
+    color: rgb(241, 241, 241);
+}
+
+h2, h3, li{
+    color:rgb(107, 107, 107);
+}
+
+.mgr-title{
+    color:rgb(238, 238, 238);
+}
+
+.manager-header{
+    background-color: #ef4f4f;
+}
+
+.engineer-header{
+    background-color: #ee9595;
+}
+
+.intern-header{
+    background-color: #ffcda3;
+}
+
+.card-body{
+    background-color: #74c7b8;
+}
+
+ul{
+    background-color: rgb(241, 241, 241);
+}
+
+a{
+    color: #ef4f4f;
+}
