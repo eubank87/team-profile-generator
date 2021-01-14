@@ -19,6 +19,9 @@ Download VS Code
 
 ## Usage:
 Can be used in external terminal on main machine or inside integrated terminal of VS Code.
+![Terminal Start](./xstart-screen.png)
+![Code](./xcode.png)
+![Final Page](./xfinal-page.png)
 
 ## Contribution:
 Submit a pull request.
